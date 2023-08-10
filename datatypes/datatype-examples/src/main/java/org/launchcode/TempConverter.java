@@ -8,9 +8,11 @@ public class TempConverter {
         double celsius;
         Scanner input;
 
+        //fahrenheit = "xyz";
+
         input = new Scanner(System.in);
         System.out.println("Enter the temperature in Fahrenheit: ");
-        fahrenheit = input.nextDouble();
+        fahrenheit = input.nextDouble();    //nextDouble() method converts input to double
         input.close();
 
         celsius = (fahrenheit - 32) * 5/9;
