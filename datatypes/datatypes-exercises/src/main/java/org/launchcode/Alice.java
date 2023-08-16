@@ -13,7 +13,7 @@ public class Alice {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a search term: ");
-        String searchString = input.next().toLowerCase();
+        String searchString = input.nextLine().toLowerCase();
 
         boolean stringsMatch = alice.contains(searchString);
         int location = alice.indexOf(searchString);
