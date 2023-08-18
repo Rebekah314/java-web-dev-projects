@@ -8,7 +8,7 @@ public class Area {
         System.out.println("Radius of circle: ");
 
         if (input.hasNextDouble()) {
-            Double radius = input.nextDouble();
+            double radius = input.nextDouble();
             while (Validation.isNegative(radius)) {
                 System.out.println("Error: Please enter a positive radius.");
                 System.out.println("Radius of circle: ");
@@ -19,6 +19,7 @@ public class Area {
         } else {
             System.out.println("Error: Please enter a number.");
         }
+        input.close();
 
 
     }
