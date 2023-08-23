@@ -1,9 +1,6 @@
 package org.launchcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class CountCharactersInQuote {
     public static void main(String[] args) {
@@ -20,14 +17,14 @@ public class CountCharactersInQuote {
         for (char quoteLetter : quote.toCharArray()) {
             letterCounts.put(quoteLetter, countLetters.count(quoteLetter, quote));
         }
-        System.out.println(letterCounts);
+        displayResults(letterCounts);
 
         //Bonus Mission #2
         HashMap<Character, Integer> lowerCaseLetterCounts = new HashMap<>();
         for (char quoteLetter : quoteLetters) {
             lowerCaseLetterCounts.put(quoteLetter, countLetters.count(quoteLetter, quote.toLowerCase()));
         }
-        System.out.println(lowerCaseLetterCounts);
+        displayResults(lowerCaseLetterCounts);
 
         //Bonus Mission #3
         String alphabet = "qwertyuiopasdfghjklzxcvbnm";
@@ -38,7 +35,7 @@ public class CountCharactersInQuote {
                 justLetterCounts.put(quoteLetter.charAt(0), countLetters.count(quoteLetter.charAt(0), quote.toLowerCase()));
             }
         }
-        System.out.println(justLetterCounts);
+        displayResults(justLetterCounts);
 
         //Bonus Mission #1: User Enter a String for counting. (like main assignment)
         HashMap<Character, Integer> userInputCount = new HashMap<>();
@@ -51,4 +48,12 @@ public class CountCharactersInQuote {
         System.out.println(userInputCount);
 
     }
+    private static void displayResults( HashMap<Character, Integer> results) {
+        System.out.println("\nResults:");
+        for (Map.Entry<Character, Integer> entry : results.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+    }
 }
+
