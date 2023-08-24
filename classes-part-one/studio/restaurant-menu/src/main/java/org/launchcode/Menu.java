@@ -11,6 +11,10 @@ public class Menu {
         this.lastUpdated = d;
         this.items = i;
     }
+    public void addItem(MenuItem newItem) {
+        this.lastUpdated = new Date();
+        this.items.add(newItem);
+    }
 
     public void setLastUpdated(Date lastUpdated) {
         this.lastUpdated = lastUpdated;
