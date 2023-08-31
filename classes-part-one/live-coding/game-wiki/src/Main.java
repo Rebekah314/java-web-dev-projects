@@ -3,7 +3,11 @@ public class Main {
         NPC link = new NPC("Link");
         Game zelda = new Game("Zelda", "RPG", "Nintendo", link);
         zelda.addCharacter(link);
-        System.out.println(link.getName());
-        System.out.println(zelda.getMainCharacter().getName());
+
+        NPC mario = new NPC("Mario");
+        System.out.println(link);
+        System.out.println(mario);
+        System.out.println(link.equals(mario));
+        System.out.println(link.equals(link));
     }
 }
