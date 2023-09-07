@@ -41,6 +41,14 @@ public class Menu {
     public ArrayList<MenuItem> getItems() {
         return items;
     }
+
+    public String toString() {
+        String output = "";
+        for (MenuItem item : this.items) {
+            output += item.toString() + "\n";
+        }
+        return output;
+    }
 }
 
 

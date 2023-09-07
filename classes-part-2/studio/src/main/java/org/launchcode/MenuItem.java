@@ -42,7 +42,7 @@ public class MenuItem {
         if (this.isNew) {
             return "New! ";
         } else {
-            return "     ";
+            return "";
         }
     }
 

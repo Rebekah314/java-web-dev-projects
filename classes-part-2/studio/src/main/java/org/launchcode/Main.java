@@ -18,9 +18,12 @@ public class Main {
         newMenu.addItem(fishTacos);
         newMenu.addItem(tacoSalad);
         newMenu.addItem(churros);
-        System.out.println(fishTacos);
-        System.out.println(tacoSalad);
-        System.out.println(churros);
-        System.out.println(newMenu.getItems());
+//        System.out.println(fishTacos);
+//        System.out.println(tacoSalad);
+//        System.out.println(churros);
+//        System.out.println(newMenu.getItems());
+        System.out.println(newMenu);
+        System.out.println(fishTacos.equals(tacoSalad));
+        System.out.println(fishTacos.equals(fishTacos));
     }
 }
