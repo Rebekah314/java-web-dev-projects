@@ -6,6 +6,9 @@ public class HouseCat extends Cat {
         super(aWeight);
         name = aName;
     }
+    public HouseCat(String name) {
+        this.name= name;
+    }
 
     public boolean isSatisfied() {
         return !isHungry() && !isTired();
