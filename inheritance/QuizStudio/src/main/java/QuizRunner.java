@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuizRunner {
+public class QuizRunner { //comment for updating on GitHub
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         ArrayList<Question> quiz = new ArrayList<>();
