@@ -8,10 +8,10 @@ public class QuizRunner { //comment for updating on GitHub
         ArrayList<Question> quiz = new ArrayList<>();
         MultipleChoice question1 = new MultipleChoice("What animal can fly? ", new ArrayList<>(Arrays.asList("dog", "cat", "bird")), "bird");
         TrueFalse question2 = new TrueFalse("Giraffes can fly.", new ArrayList<>(Arrays.asList("true", "false")), "false");
-        CheckBox question3 = new CheckBox("Which animals cannot fly?", new ArrayList<>(Arrays.asList("dog", "cat", "bird")), new ArrayList<>(Arrays.asList("dog", "cat")));
+        CheckBox question3 = new CheckBox("Which animal(s) cannot fly?", new ArrayList<>(Arrays.asList("dog", "cat", "bird")), new ArrayList<>(Arrays.asList("dog", "cat")), new ArrayList<String>(Arrays.asList("bird")));
         quiz.add(question1);
         quiz.add(question2);
-        //quiz.add(question3);
+        quiz.add(question3);
 
         double score = 0;
 
