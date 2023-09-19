@@ -1,5 +1,7 @@
 package org.launchcode;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 
 public abstract class Ingredient {
