@@ -1,13 +1,21 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        BakedGood bread = new BakedGood("bread", 1.99, true, false);
-        CannedGood peaches = new CannedGood("Peaches", 0.99, 16.0, false);
-        Fruit apple = new Fruit("Apple", 1.99, true, true);
 
-       bread.scannerNoise();
-       peaches.scannerNoise();
-       apple.scannerNoise();
+        //this is not casting! this is saving a WomenPlus object in a variable of type LaunchCode interface
+        LaunchCode course = new WomenPlus();
+
+        LaunchCode course2 = new LC101("Monday and Thursday", "The same stuff");
+        List<LaunchCode> classes = new ArrayList<>();
+        classes.add(course);
+        classes.add(course2);
+        for (LaunchCode item : classes) {
+            System.out.println(item.getCourseDays());
+        }
+        System.out.println(((WomenPlus) course).doesRetro());
     }
 }
